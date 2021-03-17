@@ -101,3 +101,99 @@ body {
     /*! margin-left: 45%; */
     margin-top: 40px;
 }
+
+/**************** Main Section *****************/
+
+main{
+    display: inline-block;
+    width: 75%;
+    min-width: 1155px;
+    height: 80vh;
+    border: 1px solid lightgreen;
+    margin-left: 2%;
+    margin-top: 10px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.main-content-container {
+    height: 1500px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* overflow-y: auto; */
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Carousel Styles */
+
+.carousel-container {
+    height: 250px;
+    width: 90%;
+    /* border-bottom: 1px solid black; */
+    position: relative;
+    padding: 10px;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    /* margin: auto; */
+}
+
+.carousel-container [type="radio"] {
+    display: none;
+}
+
+
+.carousel-container label {
+    margin: auto;
+    width: 40%;
+    height: 90%;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    cursor: pointer;
+    transition: 0.4s ease-in-out;
+}
+
+.carousel-photo img{
+    height: 100%;
+    width: 100%;
+}
+
+
+
+#s1:checked ~ #slide4, #s2:checked ~ #slide5,
+#s3:checked ~ #slide1, #s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+  transform: translate3d(-119%,0,-220px);
+}
+
+#s1:checked ~ #slide5, #s2:checked ~ #slide1,
+#s3:checked ~ #slide2, #s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+  transform: translate3d(-65%,0,-115px);
+}
+
+#s1:checked ~ #slide1, #s2:checked ~ #slide2,
+#s3:checked ~ #slide3, #s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+  transform: translate3d(0,0,0);
+}
+
+#s1:checked ~ #slide2, #s2:checked ~ #slide3,
+#s3:checked ~ #slide4, #s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+  transform: -2;
+  transform: translate3d(65%,0,-115px);
+}
+
+#s1:checked ~ #slide3, #s2:checked ~ #slide4,
+#s3:checked ~ #slide5, #s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+  transform: translate3d(119%,0,-220px);
+}
