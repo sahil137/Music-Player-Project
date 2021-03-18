@@ -300,6 +300,40 @@ main::-webkit-scrollbar {
     margin-top: 10px;
 }
 
+/* Popular Artists Section */
+
+.popular-artists {
+    /* border: 1px solid white; */
+    height: auto;
+}
+
+.popular-artists-container {
+    height: 170px;
+    /* border: 1px solid lightblue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.popular-artists-component {
+    height: 120px;
+    width: 11%;
+    /* border: 1px solid white; */
+    /* border-radius:; */
+}
+
+.popular-artists-component p {
+    color: white;
+    text-align: center;
+}
+
+.popular-artists-component img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+
 
 
 
