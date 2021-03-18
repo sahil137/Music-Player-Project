@@ -266,7 +266,7 @@ main::-webkit-scrollbar {
 .latest-releases-image-container:hover img{
     cursor: pointer;
     /* box-shadow: 2px 2px 10px 5px darkgrey inset; */
-    opacity: 0.7;
+    /* opacity: 0.7; */
     box-shadow: 1px 1px 5px 0.5px whitesmoke;
 }
 
