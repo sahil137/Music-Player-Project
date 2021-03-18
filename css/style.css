@@ -123,11 +123,14 @@ main::-webkit-scrollbar {
     height: 1500px;
     border: 1px solid red;
     overflow-y: auto;
+    overflow-x: hidden;
     min-width: 1050px;
     width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .main::-webkit-scrollbar {
@@ -139,14 +142,14 @@ main::-webkit-scrollbar {
 
 .carousel-container {
     height: 250px;
-    width: 90%;
+    width: 100%;
     /* border-bottom: 1px solid black; */
     position: relative;
     padding: 10px;
     perspective: 1000px;
     transform-style: preserve-3d;
-    margin-left: auto;
-    margin-right: auto;
+    /* margin-left: auto;
+    margin-right: auto; */
 }
 
 .carousel-container [type="radio"] {
@@ -156,7 +159,7 @@ main::-webkit-scrollbar {
 
 .carousel-container label {
     margin: auto;
-    width: 35%;
+    width: 36%;
     height: 90%;
     border-radius: 10px;
     position: absolute;
@@ -379,6 +382,39 @@ main::-webkit-scrollbar {
     transform: scale(1.13);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+}
+
+/* Latest English and Hindi section */
+
+.latest-english-hindi-section {
+    height: auto;
+    /* border: 1px solid yellow; */
+}
+
+.latest-english-hindi-container {
+    height: 180px;
+    /* border: 1px solid white; */
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest-english-hindi-component {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 0.7rem;
+}
+
+.latest-english-hindi-component p {
+    color: white;
+    margin: 2px;
+}
+
+.latest-english-hindi-component img {
+    height: 70%;
+    width: 70%;
 }
 
 
