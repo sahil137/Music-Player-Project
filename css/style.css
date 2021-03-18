@@ -110,8 +110,6 @@ main{
     min-width: 1155px;
     height: 80vh;
     /* border: 1px solid lightgreen; */
-    /* margin-left: 2%;
-    margin-top: 10px; */
     overflow-y: auto;
     overflow-x: hidden;
     justify-content: space-around;
@@ -121,25 +119,15 @@ main::-webkit-scrollbar {
     display: none;
 }
 
-.main-queue-container {
-    width: 75%;
+.main-section {
+    height: 1500px;
     border: 1px solid red;
     overflow-y: auto;
-    min-width: 1000px;
-    width: 1155px;
-}
-
-.main-queue-container::-webkit-scrollbar{
-    display: none;
-}
-
-.main-container {
-    height: 1500px;
-    width: 100%;
+    min-width: 1050px;
+    width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* overflow-y: auto; */
 }
 
 .main::-webkit-scrollbar {
