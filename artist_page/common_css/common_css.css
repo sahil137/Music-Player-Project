@@ -8,7 +8,8 @@ body {
     padding: 0;
     font-family: sans-serif;
     /* background-color: #121212; */
-    background-color: #0C1027;
+    /* background-color: #0C1027; */
+    background-color: #1c265c;
 }
 
 
@@ -108,4 +109,168 @@ body {
 {
     /*! margin-left: 45%; */
     margin-top: 40px;
+}
+
+
+
+/**************** Main Section *************/
+
+main {
+    display: flex;
+    width: 100%;
+    /* border: 1px solid white; */
+    height: 89vh;
+    padding-top: 10px;
+    justify-content: space-evenly;
+    padding-bottom: 10px;
+    min-width: 1350px;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* border: 1px solid yellow; */
+    width: 70%;
+    min-width: 1050px;
+}
+
+.similar-artist-recently-played {
+    height: 100%;
+    width: 24%;
+    /* border: 1px solid green; */
+    min-width: 360px;
+}
+
+
+/* About artist */
+
+
+
+.about-artist {
+    height: 320px;
+    width: 100%;
+    /* border: 1px solid white; */
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    color: gray;
+}
+
+.artist-img-container {
+    /* border: 1px solid red; */
+    /* position: absolute; */
+    height: 100%;
+    width: 30%;
+    background-image: url("../photos/coldplay.png");
+    background-position: top;
+    background-size: cover;
+    box-shadow: inset 0px -145px 75px 25px #18204f;
+}
+
+.artist-info {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid green; */
+}
+
+.artist-info-container {
+    height: 90%;
+    width: 100%;
+    /* border: 1px solid yellow; */
+    position: relative;
+    padding: 20px;
+}
+
+.artist-info-container button[type="submit"] {
+    height: 35px;
+    width: 127px;
+    background-image: linear-gradient(to right, #4505a7, #5f15af, #7523b7, #8931bf, #9d3fc7);
+    color: white;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    font-family: sans-serif;
+}
+
+.artist-info-container button[type="submit"]:hover {
+    cursor: pointer;
+    outline: none;
+    background-image: linear-gradient(to right top, #9f4fdb, #9041cb, #8132bc, #7322ac, #64109d);
+}
+
+.artist-name {
+    display: inline-block;
+    height: 50px;
+    width: 150px;
+}
+
+.artist-name h3,
+.artist-name h6 {
+    margin: 0;
+}
+
+.artist-name h3 {
+    font-size: 1.7rem;
+    color: white;
+}
+
+
+.tracks-albums {
+    display: inline-block;
+    color: white;
+    height: 35px;
+    width: 128px;
+    font-size: 0.75rem;
+}
+
+.followers {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    font-size: 0.8rem;
+    display: inline-block;
+    margin: 0;
+}
+
+.followers p {
+    margin: 0;
+}
+
+.followers p span {
+    font-weight: bold;
+}
+
+.artist-desc {
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.artist-desc p{
+    margin: 0;
+}
+
+.follow-text {
+    position: absolute;
+    right: 235px;
+    bottom: 50px;
+    color: white;
+    font-size: 1.3rem;
+}
+
+.follow-text p {
+    margin: 0;
+}
+
+.follow-text:hover {
+    cursor: pointer;
+}
+
+
+.artist-songs {
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid white; */
+    height: 54%;
 }
