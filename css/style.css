@@ -571,11 +571,7 @@ main::-webkit-scrollbar {
     position: absolute;
     top: 28px;
     right: 25px;
-    background: url('assets/heart.png');
-    background-position: 0 0;
     cursor: pointer;
-    transition: background-position 1s steps(28);
-    transition-duration: 0s;
 }
 
 

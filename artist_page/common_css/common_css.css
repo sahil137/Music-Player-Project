@@ -133,6 +133,7 @@ main {
     /* border: 1px solid yellow; */
     width: 70%;
     min-width: 1050px;
+    justify-content: space-between;
 }
 
 .similar-artist-recently-played {
@@ -148,7 +149,7 @@ main {
 
 
 .about-artist {
-    height: 320px;
+    height: 300px;
     width: 100%;
     /* border: 1px solid white; */
     display: flex;
@@ -268,9 +269,96 @@ main {
 }
 
 
+/* Song Section */
+
+
 .artist-songs {
     display: flex;
     flex-direction: column;
-    /* border: 1px solid white; */
-    height: 54%;
+    height: 320px;
+    justify-content: space-between;
+    color: white;
+}
+
+.artist-song-component {
+    height: 100px;
+    width: 100%;
+    /* border: 1px solid blue; */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    background-color: transparent;
+    border: none;
+}
+
+.first-half-artist-song {
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid green; */
+    position: relative;
+}
+
+
+.song-img-container{
+    height: 75px;
+    width: 75px;
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.song-img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.song-info {
+    display: inline-block;
+    position: absolute;
+    left: 110px;
+    top: 30px;
+}
+
+.song-info h6,
+.song-info h3 {
+    margin: 0;
+}
+
+.song-length {
+    display: inline-block;
+    position: absolute;
+    right: 10px;
+    font-size: 0.7rem;
+    top: 23px;
+}
+
+.second-half-artist-song {
+    height: 100%;
+    width: 50%;
+    /* border: 1px solid yellow; */
+    position: relative;
+}
+
+.favorite-heart {
+    display: inline-block;
+    position: absolute;
+    right: 60px;
+    top: 40px;
+    cursor: pointer;
+}
+
+.horizontal,
+.vertical {
+    display: inline-block;
+    position: absolute;
+    border: none;
+    border-top: 2px solid white;
+    width: 14px;
+    top: 45px;
+    right: 25px;
+    cursor: pointer;
+}
+
+.vertical {
+    transform: rotate(-90deg);
 }
