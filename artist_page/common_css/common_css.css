@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     /* background-color: #121212; */
     /* background-color: #0C1027; */
     background-color: #1c265c;
@@ -19,6 +19,7 @@ body {
 .navbar {
     height: 80px;
     /* border: 1px solid blue; */
+    min-width: 1100px;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -47,12 +48,14 @@ body {
     position: absolute;
     top: 25px;
     left: 65px;
-    font-size: 1.65rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Monsterrat', sans-serif;
 }
 
 #favourite-text p{
     /*! margin-top: 43px; */
-    margin: 0;
+    /* margin: 0; */
     position: absolute;
     top: 37px;
     left: 25%;
@@ -112,6 +115,19 @@ body {
 }
 
 
+/* Common Classes */
+
+.zero-margin {
+    margin: 0;
+}
+
+.light {
+    font-weight: 300;
+    font-size: 0.7rem;
+    color: grey;
+    font-family: 'Montserrat', sans-serif;
+}
+
 
 /**************** Main Section *************/
 
@@ -136,12 +152,6 @@ main {
     justify-content: space-between;
 }
 
-.similar-artist-recently-played {
-    height: 100%;
-    width: 24%;
-    /* border: 1px solid green; */
-    min-width: 360px;
-}
 
 
 /* About artist */
@@ -207,22 +217,20 @@ main {
     width: 150px;
 }
 
-.artist-name h3,
-.artist-name h6 {
-    margin: 0;
-}
 
 .artist-name h3 {
     font-size: 1.7rem;
     color: white;
 }
-
+.artist-name h6{
+    font-weight: 300;
+}
 
 .tracks-albums {
     display: inline-block;
     color: white;
     height: 35px;
-    width: 128px;
+    width: 135px;
     font-size: 0.75rem;
 }
 
@@ -235,9 +243,6 @@ main {
     margin: 0;
 }
 
-.followers p {
-    margin: 0;
-}
 
 .followers p span {
     font-weight: bold;
@@ -248,9 +253,6 @@ main {
     margin-bottom: 40px;
 }
 
-.artist-desc p{
-    margin: 0;
-}
 
 .follow-text {
     position: absolute;
@@ -258,10 +260,6 @@ main {
     bottom: 50px;
     color: white;
     font-size: 1.3rem;
-}
-
-.follow-text p {
-    margin: 0;
 }
 
 .follow-text:hover {
@@ -319,10 +317,6 @@ main {
     top: 30px;
 }
 
-.song-info h6,
-.song-info h3 {
-    margin: 0;
-}
 
 .song-length {
     display: inline-block;
@@ -361,4 +355,105 @@ main {
 
 .vertical {
     transform: rotate(-90deg);
+}
+
+
+
+/* Recently Played Section */
+
+.recently-played-section {
+    height: 100%;
+    width: 24%;
+    /* border: 1px solid green; */
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: space-around;
+    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+}
+
+.recently-played-header {
+    width: 100%;
+    height: 60px;
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+
+.view-all-text,
+.recently-played-text 
+{
+    display: inline-block;
+    position: absolute;
+}
+
+.recently-played-text{
+    left: 5px;
+    top: 15px;
+}
+.view-all-text{
+    cursor: pointer;
+    right: 10px;
+    top: 19px;
+}
+
+.recently-played-songs-container {
+    width: 100%;
+    height: 545px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+.recently-played-song {
+    height: 80px;
+    width: 100%;
+    /* border: 1px solid orange; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+}
+
+.recently-played-song-img-container {
+    height: 63%;
+    width: 14%;
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+}
+
+.recently-played-song-img-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.song-name,
+.singer-name {
+    color: white;
+}
+.song-name {
+    display: inline-block;
+    font-weight: 700;
+    position: absolute;
+    top: 22px;
+    left: 80px;
+}
+
+.singer-name {
+    display: inline-block;
+    font-size: 0.6rem;
+    position: absolute;
+    top: 42px;
+    left: 84px;
+}
+
+.favorite-heart-recently-played {
+    display: inline-block;
+    position: absolute;
+    top: 28px;
+    right: 25px;
+    cursor: pointer;
 }
