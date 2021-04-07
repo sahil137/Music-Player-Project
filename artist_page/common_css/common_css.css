@@ -172,7 +172,7 @@ main {
     /* position: absolute; */
     height: 100%;
     width: 30%;
-    background-image: url("../photos/coldplay.png");
+    /* background-image: url("../photos/coldplay.png");   Background Image added as inline css  */
     background-position: top;
     background-size: cover;
     box-shadow: inset 0px -145px 75px 25px #18204f;
