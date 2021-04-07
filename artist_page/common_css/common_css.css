@@ -203,6 +203,7 @@ main {
     border: none;
     font-size: 1.2rem;
     font-family: sans-serif;
+    border-radius: 5px;
 }
 
 .artist-info-container button[type="submit"]:hover {
