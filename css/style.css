@@ -16,8 +16,9 @@ body {
 
 
 .navbar {
-    height: 90px;
+    height: 80px;
     /* border: 1px solid blue; */
+    min-width: 1100px;
     display: flex;
     justify-content: space-between;
     color: white;
@@ -33,23 +34,31 @@ body {
 }
 
 #logo-container img{
-    height: 63px;
+    height: 48px;
     /* min-height: 63px; */
-    width: 82px;
+    width: 64px;
     /* min-width: 82px; */
-    margin-top: 5%;
-    margin-left: 4%;
+    position: absolute;
+    top: 15px;
+    left: 3px;
 }
 
 #logo-container span{
     position: absolute;
-    top: 51px;
-    left: 82px;
-    font-size: 0.7rem;
+    top: 25px;
+    left: 65px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Monsterrat', sans-serif;
 }
 
 #favourite-text p{
-    margin-top: 43px;
+    /*! margin-top: 43px; */
+    /* margin: 0; */
+    position: absolute;
+    top: 37px;
+    left: 25%;
+    /*! font-size: ; */
 }
 
 #search-container {
@@ -60,7 +69,7 @@ body {
     background-color: #282828;
     width: 100%;
     border-radius: 16px;
-    margin-top: 33px;
+    margin-top: 28px;
     height: 33px;
 }
 
@@ -88,9 +97,10 @@ body {
     cursor: pointer;
 }
 
-#notification-bell{
-    margin-right: -12%;
-}
+/* #notification-bell{
+    margin-right: -10%;
+    transform: scale(1.5);
+}  */
 
 #user-profile {
     margin-right: 3%;
@@ -102,6 +112,17 @@ body {
     /*! margin-left: 45%; */
     margin-top: 40px;
 }
+
+
+/* Common Classes */
+
+.zero-margin {
+    margin: 0;
+}
+
+
+
+
 
 /**************** Main Section *****************/
 
@@ -292,11 +313,7 @@ main::-webkit-scrollbar {
     cursor: pointer;
 }
 
-.date-of-release {
-    font-size: 0.5rem;
-    word-spacing: 0.2rem;
-    font-weight: lighter;
-}
+
 
 /* Common class */
 
@@ -410,7 +427,7 @@ main::-webkit-scrollbar {
     font-size: 0.7rem;
 }
 
-.latest-english-hindi-component p {
+.latest-english-hindi-component-title{
     color: white;
     margin: 2px;
 }
@@ -805,4 +822,30 @@ main::-webkit-scrollbar {
 .icon-three {
     top: 16px;
     right: 110px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Some Common Classes */
+
+.light {
+    font-weight: 400;
+    font-size: 0.5rem;
+    color: darkgrey;
+    letter-spacing: 0.1rem;
+    font-family: 'Montserrat', sans-serif;
 }
