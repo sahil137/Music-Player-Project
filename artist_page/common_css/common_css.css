@@ -282,12 +282,28 @@ main {
 .artist-song-component {
     height: 100px;
     width: 100%;
-    /* border: 1px solid blue; */
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     background-color: transparent;
     border: none;
 }
+
+/* Common class for hovering effect*/
+
+.artist-song-component,
+.recently-played-song {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.artist-song-component:hover,
+.recently-played-song:hover
+{
+    transform: translate3d(10px, 0px, 50px);
+}
+
+
 
 .first-half-artist-song {
     height: 100%;
@@ -412,7 +428,6 @@ main {
 .recently-played-song {
     height: 80px;
     width: 100%;
-    /* border: 1px solid orange; */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     position: relative;
 }
