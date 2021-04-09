@@ -53,12 +53,9 @@ body {
 }
 
 #favourite-text p{
-    /*! margin-top: 43px; */
-    /* margin: 0; */
     position: absolute;
     top: 37px;
     left: 25%;
-    /*! font-size: ; */
 }
 
 #search-container {
@@ -536,20 +533,22 @@ main::-webkit-scrollbar {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 100px;
-    overflow: auto;
-    height: 80px;
+    min-width: 94px;
+    overflow: hidden;
+    height: 55px;
     right: 10px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    /*! padding: 12px 16px; */
     z-index: 1;
     color: black;
+    padding-top: 2px;
 }
 
 .dropdown-content hr {
     border: 1px solid purple;
-    width: 100%;
+    width: 90%;
 
+    margin: 6px;
 }
 
 .dropdown-content p {
@@ -559,6 +558,15 @@ main::-webkit-scrollbar {
 
 .queue-dropdown:hover .dropdown-content {
     display: block;
+    /* position: relative; */
+}
+
+.favorite-text-dropdown,
+.my-playlist-text-dropdown
+{
+    width: 100%;
+    height: 17px;
+    text-align: center;
 }
 
 
