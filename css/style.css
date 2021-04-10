@@ -52,7 +52,7 @@ body {
     font-family: 'Monsterrat', sans-serif;
 }
 
-#favourite-text p{
+#favorite-text p{
     position: absolute;
     top: 37px;
     left: 25%;
@@ -94,11 +94,6 @@ body {
     cursor: pointer;
 }
 
-/* #notification-bell{
-    margin-right: -10%;
-    transform: scale(1.5);
-}  */
-
 #user-profile {
     margin-right: 3%;
 }
@@ -110,6 +105,15 @@ body {
     margin-top: 40px;
 }
 
+.hamburger-button-container{
+    height: 0;
+    width: 0;
+    display: none;
+}
+
+.hamburger-dropdown-content {
+    display: none;
+}
 
 /* Common Classes */
 
@@ -843,10 +847,132 @@ main::-webkit-scrollbar {
 
 /*************************** Media Queries *************************/
 
-/* Media Queries for NavBar */
+@media  screen and (max-width: 1300px) {
+    .song-info,
+    .other-icons
+    {
+        display: none;
+    }
+}
 
 
 
+
+@media screen and (max-width: 1000px){
+
+    body {
+        width: 100vw;
+        height: auto;
+    }
+
+    .navbar {
+        height: 60px;
+        /* border: 1px solid blue; */
+        min-width: -webkit-fill-available;
+        width: 70vw;
+        display: flex;
+        justify-content: start;
+        color: white;
+    }
+
+    #favorite-text,
+    #user-profile,
+    #notification-bell
+    {
+        display: none;
+        position: absolute;
+    }
+
+    .queue-section {
+        display: none;
+        min-width: none;
+        position: absolute;
+    }
+
+    .search-section{
+        min-width: 0;
+        width: 200px;
+    }
+
+    .search-section input {
+        width: 60%;
+    }
+
+    main{
+        width: auto;
+        min-width: 0;
+    }
+
+    .main-section{
+        width: 100vw;
+        min-width: 960px;
+    }
+
+    .player-controls{
+        width: 100%;
+        min-width: none;
+    }
+
+    .carousel-container{
+        padding: 0;
+        padding-top: 50px;
+        height: 200px;
+    }
+
+    .carousel-container label {
+        width: 28%;
+        height: 77%;
+    }
+
+    .main-section h3{
+        text-align: center;
+    }
+
+    .hamburger-button-container {
+        position: absolute;
+        display: inline-block;
+        top: 25px;
+        right: 50px;
+        height: auto;
+        width: auto;
+        cursor: pointer;
+    }
+
+    .hamburger-button {
+        display: block;
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 6px 0;
+        /* position: absolute; */
+        right: 10px;
+        top: 5px;
+    }
+
+    .hamburger-dropdown-content{
+        position: absolute;
+        height: 100px;
+        width: 90px;
+        border: 1px solid white;
+        z-index: 1;
+        right: 30px;
+        background-color: black;
+        align-items: center;
+        justify-content: space-around;
+        overflow-y: auto;
+    }
+
+    .hamburger-dropdown-content::-webkit-scrollbar{
+        display: none;
+    }
+
+    .hamburger-button-container:hover .hamburger-dropdown-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    
+}
 
 
 
